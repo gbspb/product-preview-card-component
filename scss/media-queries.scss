@@ -1,0 +1,81 @@
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-cyan: hsl(158, 36%, 37%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$Cream: hsl(30, 38%, 92%);
+$White: hsl(0, 0%, 100%);
+
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+    height: 100vh;
+
+    #container {
+      height: 605px;
+      width: 345px;
+      border-radius: 12px;
+      background-color: $White;
+      display: grid;
+
+      .box-img {
+        width: 345px;
+        height: 240px;
+        background-image: url('../images/image-product-mobile.jpg');
+        border-radius: 12px 12px 0 0;
+
+      }
+
+      img {
+        display: none;
+      }
+
+      .description {
+        margin-left: 25px;
+
+        h1 {
+          width: 295px;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 14px;
+          width: 295px;
+          line-height: 23px;
+          margin-top: 5px;
+        }
+
+        .category {
+          margin-top: 20px;
+          margin-bottom: 6px;
+          font-size: 11px;
+        }
+
+        .prices {
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+
+        button {
+          margin-top: 20px;
+          width: 295px;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    margin: 30px;
+    font-size: 11px;
+    text-align: center;
+    color: $Dark-grayish-blue;
+
+    a {
+      color: $Dark-grayish-blue;
+      text-decoration: none;
+
+      &:hover {
+        color: $Dark-cyan;
+      }
+    }
+  }
+}

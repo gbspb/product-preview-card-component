@@ -1,0 +1,128 @@
+@import './media-queries.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-cyan: hsl(158, 36%, 37%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$Cream: hsl(30, 38%, 92%);
+$White: hsl(0, 0%, 100%);
+
+body {
+  background-color: $Cream;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0;
+
+  .container {
+    height: 450px;
+    width: 600px;
+    border-radius: 12px;
+    background-color: $White;
+    display: flex;
+
+    img {
+      height: 450px;
+      border-radius: 12px 0 0 12px;
+    }
+  }
+
+
+
+  .description {
+    color: $Dark-grayish-blue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-left: 30px;
+
+    h1 {
+      color: $Very-dark-blue;
+      font-family: 'Fraunces', serif;
+      line-height: 33px;
+      width: 200px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      width: 225px;
+      line-height: 23px;
+    }
+
+    .category {
+      color: $Dark-grayish-blue;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      margin-top: 30px;
+    }
+
+    .prices {
+      display: flex;
+      align-items: center;
+      margin-bottom: 35px;
+
+      .promo-price {
+        margin-right: 20px;
+        font-family: 'Fraunces', serif;
+        font-size: 32px;
+        color: $Dark-cyan;
+      }
+
+      .old-price {
+        font-size: 13px;
+        text-decoration: line-through;
+      }
+    }
+
+    button {
+      margin-bottom: 30px;
+      background-color: $Dark-cyan;
+      color: $White;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      height: 48px;
+      width: 235px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: $Dark-cyan;
+        border: 2px solid $Dark-cyan;
+      }
+
+      .bi-cart3 {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+
+.attribution {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 8px;
+  text-align: center;
+  color: $Dark-grayish-blue;
+
+  a {
+    color: $Dark-grayish-blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $Dark-cyan;
+    }
+  }
+}

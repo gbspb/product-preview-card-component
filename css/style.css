@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+    height: 100vh;
+  }
+  body #container {
+    height: 605px;
+    width: 345px;
+    border-radius: 12px;
+    background-color: hsl(0deg, 0%, 100%);
+    display: grid;
+  }
+  body #container .box-img {
+    width: 345px;
+    height: 240px;
+    background-image: url("../images/image-product-mobile.jpg");
+    border-radius: 12px 12px 0 0;
+  }
+  body #container img {
+    display: none;
+  }
+  body #container .description {
+    margin-left: 25px;
+  }
+  body #container .description h1 {
+    width: 295px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  body #container .description p {
+    font-size: 14px;
+    width: 295px;
+    line-height: 23px;
+    margin-top: 5px;
+  }
+  body #container .description .category {
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-size: 11px;
+  }
+  body #container .description .prices {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  body #container .description button {
+    margin-top: 20px;
+    width: 295px;
+  }
+  .attribution {
+    margin: 30px;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228deg, 12%, 48%);
+  }
+  .attribution a {
+    color: hsl(228deg, 12%, 48%);
+    text-decoration: none;
+  }
+  .attribution a:hover {
+    color: hsl(158deg, 36%, 37%);
+  }
+}
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0;
+}
+body .container {
+  height: 450px;
+  width: 600px;
+  border-radius: 12px;
+  background-color: hsl(0deg, 0%, 100%);
+  display: flex;
+}
+body .container img {
+  height: 450px;
+  border-radius: 12px 0 0 12px;
+}
+body .description {
+  color: hsl(228deg, 12%, 48%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin-left: 30px;
+}
+body .description h1 {
+  color: hsl(212deg, 21%, 14%);
+  font-family: "Fraunces", serif;
+  line-height: 33px;
+  width: 200px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+body .description p {
+  font-size: 14px;
+  width: 225px;
+  line-height: 23px;
+}
+body .description .category {
+  color: hsl(228deg, 12%, 48%);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 30px;
+}
+body .description .prices {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+body .description .prices .promo-price {
+  margin-right: 20px;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: hsl(158deg, 36%, 37%);
+}
+body .description .prices .old-price {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+body .description button {
+  margin-bottom: 30px;
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  height: 48px;
+  width: 235px;
+}
+body .description button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(158deg, 36%, 37%);
+  border: 2px solid hsl(158deg, 36%, 37%);
+}
+body .description button .bi-cart3 {
+  padding-left: 10px;
+}
+
+.attribution {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 8px;
+  text-align: center;
+  color: hsl(228deg, 12%, 48%);
+}
+.attribution a {
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: hsl(158deg, 36%, 37%);
+}
+
+/*# sourceMappingURL=style.css.map */
