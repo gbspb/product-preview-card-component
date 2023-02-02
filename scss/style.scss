@@ -16,26 +16,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 
   .container {
-    height: 450px;
     width: 600px;
     border-radius: 12px;
     background-color: $White;
     display: flex;
 
+    .box-img {
+      width: 50%;
+    }
+
     img {
-      height: 450px;
+      width: 100%;
+      height: 100%;
       border-radius: 12px 0 0 12px;
     }
   }
 
-
-
   .description {
+    width: 50%;
     color: $Dark-grayish-blue;
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +48,7 @@ body {
       color: $Very-dark-blue;
       font-family: 'Fraunces', serif;
       line-height: 33px;
-      width: 200px;
+      width: 50%;
       margin-top: 0;
       margin-bottom: 10px;
     }
@@ -107,7 +109,6 @@ body {
     }
   }
 }
-
 
 .attribution {
   margin: 0;
